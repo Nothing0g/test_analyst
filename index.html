@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shubham — Data &amp; Business Analyst Portfolio</title>
+<meta name="description" content="Shubham — Analyst with a mechanical engineering foundation. Case studies in ride-demand analysis and attrition modeling, viewable as either a technical or business narrative.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,450;9..144,550;9..144,650&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<!-- ============================================================
+     VIEW: DATA ANALYST (default active view)
+     ============================================================ -->
+<div class="view view-active" id="view-da" data-persona="da">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="hero-scanline" aria-hidden="true"></div>
+    <h1 class="hero-name">Shubham</h1>
+    <div class="hero-lines">
+      <p>Data Analyst · Mechanical engineering foundation.</p>
+      <p>I find the signal in messy data and make it actionable.</p>
+    </div>
+    <div class="hero-cta">
+      <a href="#work-da" class="btn btn-primary">View technical work</a>
+      <a href="#" data-link="resume-da" class="btn btn-secondary" target="_blank" rel="noopener">Resume ↗</a>
+      <a href="#contact-da" class="btn btn-secondary">Get in touch</a>
+    </div>
+
+    <div class="terminal reveal is-visible">
+      <div class="terminal-bar">
+        <span></span><span></span><span></span>
+        <span class="terminal-label">shubham — zsh</span>
+      </div>
+      <div class="terminal-body" data-terminal-body data-lines='[
+        {"prompt":"~ $","text":"who_am_i"},
+        {"prompt":"→","text":"Data Analyst · Mechanical Eng. background"},
+        {"prompt":"~ $","text":"stack"},
+        {"prompt":"→","text":"Python · SQL · Power BI · scikit-learn"},
+        {"prompt":"~ $","text":"currently"},
+        {"prompt":"→","text":"Open to DA / BA / PA roles"}
+      ]'></div>
+    </div>
+
+    <div class="spotlight-panel reveal is-visible" aria-label="Move your cursor to reveal the signal in the noise">
+      <div class="spotlight-base" aria-hidden="true" style="
+        background:
+          repeating-linear-gradient(0deg, rgba(255,255,255,0.04) 0px, rgba(255,255,255,0.04) 1px, transparent 1px, transparent 22px),
+          repeating-linear-gradient(90deg, rgba(255,255,255,0.04) 0px, rgba(255,255,255,0.04) 1px, transparent 1px, transparent 90px),
+          var(--bg-elevated);
+        display:flex; flex-wrap:wrap; align-content:flex-start; gap:2px; padding:14px; overflow:hidden;
+        font-family: var(--font-mono); font-size:10px; color: var(--text-tertiary); line-height:22px;
+      ">
+        <span style="opacity:.5">4821,NaN,0.71,err,3390</span>
+        <span style="opacity:.3">null,8823,--,0.02,NaN</span>
+        <span style="opacity:.6">1102,4.5,err,--,7710</span>
+        <span style="opacity:.4">NaN,993,0.88,err,--</span>
+        <span style="opacity:.5">2287,--,NaN,0.14,5541</span>
+      </div>
+      <div class="spotlight-reveal" aria-hidden="true">
+        <svg viewBox="0 0 640 260" preserveAspectRatio="none" style="width:100%;height:100%;">
+          <rect width="640" height="260" fill="var(--bg-elevated)"/>
+          <polyline points="0,210 60,180 120,195 180,120 240,140 300,80 360,100 420,50 480,70 540,30 600,45 640,20"
+            fill="none" stroke="var(--accent)" stroke-width="3"/>
+          <g fill="var(--accent)">
+            <circle cx="180" cy="120" r="4"/>
+            <circle cx="360" cy="100" r="4"/>
+            <circle cx="540" cy="30" r="4"/>
+          </g>
+        </svg>
+      </div>
+      <span class="spotlight-hint">move cursor to reveal signal</span>
+    </div>
+    <div class="spotlight-cursor-dot"></div>
+  </section>
+
+  <!-- ============ WORK ============ -->
+  <section id="work-da" class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow eyebrow-numbered"><span class="eyebrow-num">A1</span>Selected Work</span>
+      <h2>Technical case studies</h2>
+      <p class="lede">Projects where analysis and modeling drove a real decision — methods and outcomes both shown below.</p>
+    </div>
+
+    <div class="work-grid">
+      <div class="card reveal" data-open-project="uber">
+        <div class="card-visual">
+          <div class="bars" aria-hidden="true">
+            <span style="height:35%"></span><span style="height:62%" class="hi"></span>
+            <span style="height:48%"></span><span style="height:88%" class="hi"></span>
+            <span style="height:30%"></span><span style="height:70%" class="hi"></span>
+            <span style="height:40%"></span><span style="height:58%"></span>
+            <span style="height:25%"></span><span style="height:66%" class="hi"></span>
+            <span style="height:45%"></span><span style="height:32%"></span>
+          </div>
+        </div>
+        <div class="card-body">
+          <h3>Ride Failure Root Cause Analysis</h3>
+          <p>150K NCR ride records analyzed in Python/Pandas — found a flat ~25% failure rate across all hours, isolated to a structural matching gap once segmented by demand zone.</p>
+          <div class="card-meta">
+            <span class="card-tag">Python · Pandas</span>
+            <span class="card-tag">Segmentation analysis</span>
+          </div>
+          <span class="card-link">
+            View case study
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </span>
+        </div>
+      </div>
+
+      <div class="card reveal" data-open-project="hr">
+        <div class="card-visual">
+          <div class="linechart" aria-hidden="true">
+            <svg viewBox="0 0 200 100" preserveAspectRatio="none">
+              <polyline points="0,70 20,60 40,68 60,45 80,50 100,30 120,38 140,20 160,28 180,15 200,22"
+                fill="none" stroke="var(--text-tertiary)" stroke-width="1.5" opacity="0.5"/>
+              <polyline points="0,80 20,75 40,60 60,65 80,40 100,48 120,25 140,32 160,18 180,24 200,12"
+                fill="none" stroke="var(--accent)" stroke-width="2"/>
+            </svg>
+          </div>
+        </div>
+        <div class="card-body">
+          <h3>HR Attrition Prediction Model</h3>
+          <p>Logistic Regression vs. Random Forest on 1,470 employee records, optimized for recall over raw accuracy — surfaced a ~3x attrition rate among overtime workers.</p>
+          <div class="card-meta">
+            <span class="card-tag">scikit-learn</span>
+            <span class="card-tag">Classification</span>
+          </div>
+          <span class="card-link">
+            View case study
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <div class="card-placeholder reveal" style="margin-top:28px;">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>
+      <strong>Third case study — in progress</strong>
+      <span>A data-driven BA case (funnel / pricing / A&#47;B analysis). Coming soon.</span>
+    </div>
+  </section>
+
+  <!-- ============ DASHBOARD ============ -->
+  <section id="dashboard-da" class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow eyebrow-numbered"><span class="eyebrow-num">B1</span>Live Dashboard</span>
+      <h2>Interactive dashboard</h2>
+      <p class="lede">A Looker Studio dashboard built on the Uber ride demand dataset — scroll and click within the frame to explore.</p>
+    </div>
+    <div class="dashboard-frame reveal">
+      <!-- REPLACE with: <iframe src="YOUR_LOOKER_STUDIO_EMBED_URL" allowfullscreen></iframe> -->
+      <div class="dashboard-placeholder">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+        <strong>Dashboard embed pending</strong>
+        Paste your Looker Studio embed URL into the <code>&lt;iframe&gt;</code> marked in the HTML source.
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section id="about-da" class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow eyebrow-numbered"><span class="eyebrow-num">C1</span>About</span>
+      <h2>Background</h2>
+    </div>
+    <div class="about-grid">
+      <div class="reveal">
+        <p>I started in mechanical engineering — designing parts, running FEA simulations, obsessing over tolerances. Along the way I realized the most impactful thing I could do wasn't refining a CAD model; it was asking the right question of the right dataset.</p>
+        <p>Now I build models and pipelines that turn messy, multi-source data into something a team can actually query, trust, and act on.</p>
+      </div>
+      <div class="reveal">
+        <span class="eyebrow">Tools I use</span>
+        <ul class="tools-list">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round"><path d="M12 4v16M4 12h16"/></svg>Python &amp; Pandas</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18"/></svg>SQL &amp; MySQL</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round"><path d="M4 19V9M12 19V5M20 19v-6"/></svg>Power BI &amp; Looker Studio</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round"><circle cx="12" cy="12" r="8"/><path d="M12 8v4l3 2"/></svg>scikit-learn</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round"><path d="M9 18l-6-6 6-6M15 6l6 6-6 6"/></svg>Git &amp; GitHub</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section id="contact-da" class="container contact">
+    <div class="reveal">
+      <span class="eyebrow eyebrow-numbered"><span class="eyebrow-num">D1</span>Let's connect</span>
+      <h2 style="margin-top:12px;">Let's connect</h2>
+      <p class="lede" style="margin:16px auto 0;">Open to data analyst roles, freelance projects, and conversations about data. Fastest way to reach me is email.</p>
+      <div class="contact-cta">
+        <a href="#" data-link="email" class="btn btn-primary">Send an email</a>
+        <a href="#" data-link="linkedin" class="btn btn-secondary" target="_blank" rel="noopener">LinkedIn ↗</a>
+        <a href="#" data-link="github-profile" class="btn btn-secondary" target="_blank" rel="noopener">GitHub ↗</a>
+        <a href="#" data-link="resume-da" class="btn btn-secondary" target="_blank" rel="noopener">Resume ↗</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>© 2026 Shubham. Built with care, one page at a time.</footer>
+</div>
+
+<!-- ============================================================
+     VIEW: BUSINESS ANALYST (hidden by default)
+     ============================================================ -->
+<div class="view" id="view-ba" data-persona="ba">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="hero-scanline" aria-hidden="true"></div>
+    <h1 class="hero-name">Shubham</h1>
+    <div class="hero-lines">
+      <p>Business Analyst · Mechanical engineering foundation.</p>
+      <p>I turn ambiguous problems into decisions teams can act on.</p>
+    </div>
+    <div class="hero-cta">
+      <a href="#work-ba" class="btn btn-primary">View case studies</a>
+      <a href="#" data-link="resume-ba" class="btn btn-secondary" target="_blank" rel="noopener">Resume ↗</a>
+      <a href="#contact-ba" class="btn btn-secondary">Get in touch</a>
+    </div>
+
+    <div class="terminal reveal is-visible">
+      <div class="terminal-bar">
+        <span></span><span></span><span></span>
+        <span class="terminal-label">shubham — zsh</span>
+      </div>
+      <div class="terminal-body" data-terminal-body data-lines='[
+        {"prompt":"~ $","text":"who_am_i"},
+        {"prompt":"→","text":"Business Analyst · Mechanical Eng. background"},
+        {"prompt":"~ $","text":"focus"},
+        {"prompt":"→","text":"Frameworks, stakeholder alignment, decisions"},
+        {"prompt":"~ $","text":"currently"},
+        {"prompt":"→","text":"Open to BA / DA / PA roles"}
+      ]'></div>
+    </div>
+
+    <div class="spotlight-panel reveal is-visible" aria-label="Move your cursor to reveal the recommendation">
+      <div class="spotlight-base" aria-hidden="true" style="
+        background:
+          repeating-linear-gradient(0deg, rgba(255,255,255,0.04) 0px, rgba(255,255,255,0.04) 1px, transparent 1px, transparent 22px),
+          repeating-linear-gradient(90deg, rgba(255,255,255,0.04) 0px, rgba(255,255,255,0.04) 1px, transparent 1px, transparent 90px),
+          var(--bg-elevated);
+        display:flex; flex-wrap:wrap; align-content:flex-start; gap:10px; padding:16px; overflow:hidden;
+        font-family: var(--font-mono); font-size:10px; color: var(--text-tertiary); line-height:16px;
+      ">
+        <span style="opacity:.5">"maybe we look at churn?"</span>
+        <span style="opacity:.35">Q3 targets — TBD</span>
+        <span style="opacity:.55">stakeholder ask #14</span>
+        <span style="opacity:.4">conflicting priorities</span>
+        <span style="opacity:.5">"what does success look like"</span>
+        <span style="opacity:.3">unclear scope</span>
+      </div>
+      <div class="spotlight-reveal" aria-hidden="true">
+        <div style="width:100%;height:100%;display:flex;flex-direction:column;justify-content:center;padding:0 28px;background:var(--bg-elevated);">
+          <div style="font-family:var(--font-mono); font-size:10px; color:var(--accent); text-transform:uppercase; letter-spacing:.08em; margin-bottom:8px;">Recommendation</div>
+          <div style="font-family:var(--font-display); font-size:1.3rem; color:var(--text-primary); line-height:1.35;">Rebalance zone-level matching before adding fleet capacity.</div>
+        </div>
+      </div>
+      <span class="spotlight-hint">move cursor to reveal the call</span>
+    </div>
+    <div class="spotlight-cursor-dot"></div>
+  </section>
+
+  <!-- ============ WORK ============ -->
+  <section id="work-ba" class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow eyebrow-numbered"><span class="eyebrow-num">A1</span>Selected Work</span>
+      <h2>Business case studies</h2>
+      <p class="lede">Projects where data pointed to a decision — the recommendation and the method behind it, both shown below.</p>
+    </div>
+
+    <div class="work-grid">
+      <div class="card reveal" data-open-project="uber">
+        <div class="card-visual">
+          <div class="bars" aria-hidden="true">
+            <span style="height:35%"></span><span style="height:62%" class="hi"></span>
+            <span style="height:48%"></span><span style="height:88%" class="hi"></span>
+            <span style="height:30%"></span><span style="height:70%" class="hi"></span>
+            <span style="height:40%"></span><span style="height:58%"></span>
+            <span style="height:25%"></span><span style="height:66%" class="hi"></span>
+            <span style="height:45%"></span><span style="height:32%"></span>
+          </div>
+        </div>
+        <div class="card-body">
+          <h3>Why Ride Failures Weren't a Peak-Hour Problem</h3>
+          <p>Leadership assumed failed rides were a capacity issue at rush hour. The data said otherwise — a flat ~25% failure rate all day, driven by a structural matching gap between zones.</p>
+          <div class="card-meta">
+            <span class="card-tag">Stakeholder framing</span>
+            <span class="card-tag">Root-cause analysis</span>
+          </div>
+          <span class="card-link">
+            View case study
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </span>
+        </div>
+      </div>
+
+      <div class="card reveal" data-open-project="hr">
+        <div class="card-visual">
+          <div class="linechart" aria-hidden="true">
+            <svg viewBox="0 0 200 100" preserveAspectRatio="none">
+              <polyline points="0,70 20,60 40,68 60,45 80,50 100,30 120,38 140,20 160,28 180,15 200,22"
+                fill="none" stroke="var(--text-tertiary)" stroke-width="1.5" opacity="0.5"/>
+              <polyline points="0,80 20,75 40,60 60,65 80,40 100,48 120,25 140,32 160,18 180,24 200,12"
+                fill="none" stroke="var(--accent)" stroke-width="2"/>
+            </svg>
+          </div>
+        </div>
+        <div class="card-body">
+          <h3>Finding a Retention Lever HR Could Actually Use</h3>
+          <p>Rather than a generic attrition dashboard, the goal was one actionable insight: overtime workers leave at nearly 3x the rate of others — a policy lever, not just a statistic.</p>
+          <div class="card-meta">
+            <span class="card-tag">Decision framing</span>
+            <span class="card-tag">Retention strategy</span>
+          </div>
+          <span class="card-link">
+            View case study
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <div class="card-placeholder reveal" style="margin-top:28px;">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>
+      <strong>Third case study — in progress</strong>
+      <span>A data-driven BA case (funnel / pricing / A&#47;B analysis). Coming soon.</span>
+    </div>
+  </section>
+
+  <!-- ============ DASHBOARD ============ -->
+  <section id="dashboard-ba" class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow eyebrow-numbered"><span class="eyebrow-num">B1</span>Live Dashboard</span>
+      <h2>Interactive dashboard</h2>
+      <p class="lede">A Looker Studio dashboard built on the Uber ride demand dataset — scroll and click within the frame to explore.</p>
+    </div>
+    <div class="dashboard-frame reveal">
+      <!-- REPLACE with: <iframe src="YOUR_LOOKER_STUDIO_EMBED_URL" allowfullscreen></iframe> -->
+      <div class="dashboard-placeholder">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+        <strong>Dashboard embed pending</strong>
+        Paste your Looker Studio embed URL into the <code>&lt;iframe&gt;</code> marked in the HTML source.
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section id="about-ba" class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow eyebrow-numbered"><span class="eyebrow-num">C1</span>About</span>
+      <h2>Background</h2>
+    </div>
+    <div class="about-grid">
+      <div class="reveal">
+        <p>I started in mechanical engineering — designing parts, running FEA simulations, obsessing over tolerances. Along the way I realized the most impactful thing I could do wasn't refining a CAD model; it was asking the right question of the right dataset.</p>
+        <p>Now I work at the intersection of data and business strategy — taking ambiguous problems, pulling together messy data from multiple sources, and turning them into clear findings that teams can actually act on.</p>
+      </div>
+      <div class="reveal">
+        <span class="eyebrow">Tools I use</span>
+        <ul class="tools-list">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round"><path d="M12 4v16M4 12h16"/></svg>Python &amp; Pandas</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18"/></svg>SQL &amp; MySQL</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round"><path d="M4 19V9M12 19V5M20 19v-6"/></svg>Power BI &amp; Looker Studio</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round"><circle cx="12" cy="12" r="8"/><path d="M12 8v4l3 2"/></svg>Stakeholder frameworks</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round"><path d="M9 18l-6-6 6-6M15 6l6 6-6 6"/></svg>Git &amp; GitHub</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section id="contact-ba" class="container contact">
+    <div class="reveal">
+      <span class="eyebrow eyebrow-numbered"><span class="eyebrow-num">D1</span>Let's connect</span>
+      <h2 style="margin-top:12px;">Let's connect</h2>
+      <p class="lede" style="margin:16px auto 0;">Open to business analyst roles, freelance projects, and conversations about turning data into decisions. Fastest way to reach me is email.</p>
+      <div class="contact-cta">
+        <a href="#" data-link="email" class="btn btn-primary">Send an email</a>
+        <a href="#" data-link="linkedin" class="btn btn-secondary" target="_blank" rel="noopener">LinkedIn ↗</a>
+        <a href="#" data-link="github-profile" class="btn btn-secondary" target="_blank" rel="noopener">GitHub ↗</a>
+        <a href="#" data-link="resume-ba" class="btn btn-secondary" target="_blank" rel="noopener">Resume ↗</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>© 2026 Shubham. Built with care, one page at a time.</footer>
+</div>
+
+
+<!-- ============================================================
+     SHARED CHROME — dock, persona switch, modal (rendered once)
+     ============================================================ -->
+
+<nav class="dock" aria-label="Page navigation">
+  <a href="#" data-scroll-target="hero" class="dock-item" aria-label="Home"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>Home<span class="dock-label">Home</span></a>
+  <a href="#" data-scroll-target="work" class="dock-item" aria-label="Work"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>Work<span class="dock-label">Case studies</span></a>
+  <a href="#" data-scroll-target="dashboard" class="dock-item" aria-label="Dashboard"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19V9M12 19V5M20 19v-6"/></svg>Data<span class="dock-label">Live dashboard</span></a>
+  <a href="#" data-scroll-target="about" class="dock-item" aria-label="About"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21v-1a8 8 0 0 1 16 0v1"/></svg>About<span class="dock-label">About me</span></a>
+  <a href="#" data-scroll-target="contact" class="dock-item" aria-label="Contact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 7l10 6 10-6"/></svg>Contact<span class="dock-label">Get in touch</span></a>
+
+  <div class="dock-divider"></div>
+
+  <!-- Persona switch — in-page toggle, no navigation, ripple-masked -->
+  <button class="dock-item" id="personaDockBtn" aria-label="Switch persona view" style="color: var(--accent-ba);">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18M8 17V9M13 17V5M18 17v-8"/></svg>
+    <span id="personaDockLabel">BA view</span>
+    <span class="dock-label" id="personaDockHint">Switch to Business Analyst view</span>
+  </button>
+
+  <button class="dock-item theme-toggle" id="themeToggle" aria-label="Toggle light and dark mode">
+    <svg id="themeIcon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+  </button>
+</nav>
+
+<!-- ============ PERSONA SWITCH — HERO (large, shrinks on scroll) ============ -->
+<div class="persona-switch-hero">
+  <span class="p-label">Viewing as:</span>
+  <button class="p-btn" id="personaBtnDA"><span class="p-dot"></span>Data Analyst</button>
+  <button class="p-btn" id="personaBtnBA">Business Analyst</button>
+</div>
+
+<!-- ============ CASE STUDY MODAL ============ -->
+<div class="modal-overlay" id="projectModal">
+  <div class="modal-content">
+    <button class="modal-close" aria-label="Close">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 6L6 18M6 6l12 12"/></svg>
+    </button>
+    <div class="modal-visual"></div>
+    <div class="modal-body">
+      <div class="modal-cat" data-modal-cat></div>
+      <h3 class="modal-title" data-modal-title></h3>
+      <p class="modal-desc" data-modal-desc></p>
+      <div class="modal-highlight" data-modal-highlight></div>
+      <div class="modal-tags" data-modal-tags></div>
+      <div class="modal-foot" data-modal-foot></div>
+    </div>
+  </div>
+</div>
+
+<script>
+  // Shared links — same underlying contact info regardless of active persona view
+  window.LINKS = {
+    'email': 'mailto:shubham1sure@gmail.com',
+    'linkedin': 'https://www.linkedin.com/in/shubham-kumar-diff/',
+    'github-profile': 'https://github.com/Nothing0g/',
+    'resume-da': 'https://drive.google.com/file/d/19qugdRqiECw2DHXBmXDIuElROUC20r9z/view?usp=sharing',
+    'resume-ba': 'https://drive.google.com/file/d/1NReXbmFZ4ZAfH7S9UR_Pxoncacr8d3Ay/view?usp=sharing'
+  };
+
+  // Per-project, per-persona modal content — same underlying project, reframed
+  window.PROJECTS = {
+    uber: {
+      da: {
+        category: 'Segmentation Analysis · Python',
+        title: 'Ride Failure Root Cause Analysis',
+        description: 'Analyzed 150,000 NCR ride records to understand why failure rates stayed flat throughout the day. Rather than treating this as a peak-hour capacity problem, segmenting by vehicle class and demand zone revealed a structural matching gap invisible in the aggregate metrics.',
+        highlight: 'Key finding: ~25% failure rate was constant across all hours — the fix isn\'t more supply at peak times, it\'s better matching logic across zones.',
+        tags: ['Python', 'Pandas', 'Data Cleaning', 'Segmentation', 'Looker Studio'],
+        link: 'https://github.com/Nothing0g/Uber_ride_demand_analysis'
+      },
+      ba: {
+        category: 'Root-Cause Analysis · Operations',
+        title: 'Why Ride Failures Weren\'t a Peak-Hour Problem',
+        description: 'Leadership had assumed failed rides tracked with rush-hour demand, and were considering adding fleet capacity at peak times to fix it. Analysis of 150,000 NCR ride records told a different story: the failure rate stayed flat at ~25% all day, every day.',
+        highlight: 'Recommendation: don\'t add peak-hour capacity — rebalance the zone-level matching logic instead. The problem was structural, not a supply shortage.',
+        tags: ['Root-Cause Analysis', 'Stakeholder Communication', 'Operations', 'Data Storytelling'],
+        link: 'https://github.com/Nothing0g/Uber_ride_demand_analysis'
+      }
+    },
+    hr: {
+      da: {
+        category: 'Classification Modeling · scikit-learn',
+        title: 'HR Attrition Prediction Model',
+        description: 'Built and compared Logistic Regression and Random Forest classifiers on 1,470 employee records from the IBM HR dataset. Prioritized recall over raw accuracy since the cost of missing a departing employee outweighs a false positive.',
+        highlight: 'Key finding: employees working overtime attrite at ~3x the rate of those who don\'t — a clear, actionable retention lever.',
+        tags: ['Python', 'scikit-learn', 'Logistic Regression', 'Random Forest', 'Model Evaluation'],
+        link: 'https://github.com/Nothing0g/hr_employee_attrition_analysis'
+      },
+      ba: {
+        category: 'Decision Framing · People Strategy',
+        title: 'Finding a Retention Lever HR Could Actually Use',
+        description: 'Rather than delivering a broad attrition dashboard nobody would act on, the goal was to surface one clear, defensible lever HR leadership could actually implement. Comparing model outputs against real policy levers narrowed this to a single high-confidence finding.',
+        highlight: 'Recommendation: employees working overtime leave at ~3x the rate of others — review overtime policy before broader retention spend.',
+        tags: ['Decision Framing', 'HR Strategy', 'Stakeholder Communication', 'Model Interpretation'],
+        link: 'https://github.com/Nothing0g/hr_employee_attrition_analysis'
+      }
+    }
+  };
+</script>
+<script src="assets/main.js"></script>
+
+</body>
+</html>
